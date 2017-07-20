@@ -1,6 +1,6 @@
-#Introduction
+# Introduction
 
-##Que ce que le html (Definition)
+## Que ce que le html (Definition)
 
 HTML est le langage utilisée pour créer les pages Web que vous visitez tous les jours. Il fournit une manière logique de structurer le contenu des pages Web.
 Analysons l'acronyme "HTML", car il contient beaucoup d'informations utile. HTML signifie HyperText Markup Language.
@@ -11,7 +11,7 @@ Analysons l'acronyme "HTML", car il contient beaucoup d'informations utile. HTML
 
 	Dans ce cours, vous apprendrez à utiliser les principes fondamentaux du HTML pour structurer, présenter et lier le contenu. Vous apprendrez également à utiliser CSS, ou Cascading Style Sheets, pour classer le contenu HTML que vous ajoutez aux pages Web.
 
-    ##Commençons!
+    ## Commençons!
    Le DocTyping
 
 Un navigateur doit savoir dans quelle langue un document est écrit avant de pouvoir traiter le contenu du document.
@@ -28,7 +28,7 @@ Cette déclaration est une instruction. Il indique au navigateur quel type de do
 
 Remarque: Si vous n'utilisez pas la déclaration doctype, votre code HTML fonctionnera probablement, mais il est risqué. À l'heure actuelle, le navigateur supposera correctement que vous utilisez HTML5, car HTML5 est la norme actuelle. À l'avenir, cependant, une nouvelle norme remplacera HTML5. Les futurs navigateurs peuvent supposer que vous utilisez une norme différente et plus récente, auquel cas votre document sera interprété de manière incorrecte. Pour vous assurer que votre document est interprété pour toujours correctement, incluez toujours <! DOCTYPE html> au tout début de vos documents HTML
 
-##Preparation du document 
+## Preparation du document 
 
 Génial! Les navigateurs qui lisent votre code savent s'attendre au HTML lorsqu'ils tentent de lire votre fichier.
 
@@ -193,7 +193,7 @@ Pour les éléments d'ancrage, le nom de l'attribut est href et sa valeur doit �
 <a href="https://www.wikipedia.org/"> Ceci est un lien vers Wikipedia </a>
 Dans l'exemple ci-dessus, l'attribut href a été défini sur la valeur de l'URL correcte https://www.wikipedia.org/. L'exemple montre maintenant l'utilisation correcte d'un élément d'ancrage.
 
-```exercices
+### exercices
 
 Ajoutez un lien qui indique: En savoir plus. N'ajoutez pas l'URL pour le moment.
 Ajouter ce url sur le lien 
