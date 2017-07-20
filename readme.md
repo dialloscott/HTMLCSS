@@ -11,8 +11,8 @@ Analysons l'acronyme "HTML", car il contient beaucoup d'informations utile. HTML
 
 	Dans ce cours, vous apprendrez à utiliser les principes fondamentaux du HTML pour structurer, présenter et lier le contenu. Vous apprendrez également à utiliser CSS, ou Cascading Style Sheets, pour classer le contenu HTML que vous ajoutez aux pages Web.
 
-    ## Commençons!
-   Le DocTyping
+## Commençons!
+#### Le DocTyping
 
 Un navigateur doit savoir dans quelle langue un document est écrit avant de pouvoir traiter le contenu du document.
 
@@ -23,7 +23,7 @@ Vous pouvez laisser les navigateurs Web savoir que vous utilisez la langue HTML 
 
 La déclaration est la suivante:
 
-<! DOCTYPE html>
+``` <! DOCTYPE html> ```
 Cette déclaration est une instruction. Il indique au navigateur quel type de document attendre, ainsi que la version HTML utilisée dans le document. <! DOCTYPE html> doit être la première ligne de code dans tous vos documents HTML.
 
 Remarque: Si vous n'utilisez pas la déclaration doctype, votre code HTML fonctionnera probablement, mais il est risqué. À l'heure actuelle, le navigateur supposera correctement que vous utilisez HTML5, car HTML5 est la norme actuelle. À l'avenir, cependant, une nouvelle norme remplacera HTML5. Les futurs navigateurs peuvent supposer que vous utilisez une norme différente et plus récente, auquel cas votre document sera interprété de manière incorrecte. Pour vous assurer que votre document est interprété pour toujours correctement, incluez toujours <! DOCTYPE html> au tout début de vos documents HTML
