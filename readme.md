@@ -124,11 +124,11 @@ HTML, il existe six rubriques différentes ou des éléments de titre. Les rubri
 Voici la liste des éléments de titre disponibles en HTML. Ils sont commandés de la plus grande à la plus petite taille.
 
 <H1> - utilisé pour les rubriques principales, toutes les autres rubriques plus petites sont utilisées pour les sous-positions.
-<H2>
+ "<H2>
 <H3>
 <H4>
 <H5>
-<H6>
+<H6>"
 Le code d'exemple suivant utilise un titre destiné à attirer l'attention du lecteur. Il utilise le plus grand titre disponible, l'élément de titre principal:
 <h1>SALUT les gens</h1>
 
