@@ -216,4 +216,4 @@ Avez-vous déjà cliqué sur un lien et avez-vous observé la page Web qui s'ava
 
 L'attribut target spécifie qu'un lien doit s'ouvrir dans une nouvelle fenêtre.
 Pour un lien à ouvrir dans une nouvelle fenêtre, l'attribut target requiert une valeur de _blank. L'attribut cible peut être ajouté directement à la balise d'ouverture de l'élément d'ancrage, tout comme l'attribut href 
-exemple <a href="https://Wikipedia.org" target="_blank">wikipedia</a>
+exemple ```<a href="https://Wikipedia.org" target="_blank">wikipedia</a>```
