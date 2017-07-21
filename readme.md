@@ -338,3 +338,50 @@ Il est courant pour les développeurs d'ajouter des quantités substantielles de
 
 Création d'un grand fichier HTML difficile à lire et à gérer (par vous et d'autres développeurs). Dans l'ensemble, cela peut entraîner un flux de travail inefficace.
 Maintenir une distinction claire entre la structure de la page Web (HTML) et le style de page Web (CSS)
+
+
+## Le fichier .css
+Heureusement, la solution suivante vous aidera à éviter de créer de gros fichiers HTML qui mélangent le code CSS: un fichier CSS!
+
+Les fichiers HTML ne contiennent que le code HTML. De même, les fichiers CSS sont censés contenir uniquement un code CSS. Vous pouvez créer un fichier CSS en utilisant l'extension de nom de fichier .css, de la manière suivante: ```style.css```
+
+Avec un fichier CSS, vous pouvez écrire tout le code CSS nécessaire au style d'une page sans avoir à sacrifier la lisibilité et la facilité d'entretien de votre fichier HTML.
+
+## Liaison de fichier CSS a un fichier html
+
+Vous pouvez utiliser l'élément ```<link>``` pour lier ensemble les fichiers HTML et CSS. L'élément ```<link>``` doit être placé dans la ```<head>``` du fichier HTML. Il s'agit d'une balise à fermeture automatique et nécessite les trois attributs suivants:
+
+```Href```comme l'élément d'ancrage, la valeur de cet attribut doit être l'adresse ou le chemin d'accès au fichier CSS.
+``` type``` Cet attribut décrit le type de document auquel vous vous connectez (dans ce cas, un fichier CSS). La valeur de cet attribut doit être définie sur ```text/css```.
+```rel``` Cet attribut décrit la relation entre le fichier HTML et le fichier CSS. Parce que vous vous connectez à une feuille de style, la valeur doit être définie sur la feuille de style.
+Lors de la liaison d'un fichier HTML et d'un fichier CSS ensemble, l'élément ```<link>``` ressemble à ce qui suit:
+
+```<link href = "https://www.exemple.com/stylesheets/style.css" type = "text/css" rel = "stylesheet">```
+Notez que dans l'exemple ci-dessus, le chemin d'accès à la feuille de style est une URL:
+
+Https://www.exemple.com/stylesheets/style.css
+La spécification du chemin d'accès à la feuille de style à l'aide d'une URL est une façon de relier une feuille de style.
+
+## Revoyons: la configuration CSS
+Bon travail! Vous avez appris comment lier un fichier HTML et un fichier CSS ensemble.
+
+##  Examinons ce que vous avez appris jusqu'ici:
+
+1. Le HTML et le CSS sont conservés dans des fichiers distincts afin de garder le code lisible , ainsi que de garder la structure séparée du style.
+
+2. L'élément ```<style>``` vous permet d'écrire un code CSS dans un fichier HTML.
+
+3. Une feuille de style CSS peut être liée à un fichier HTML à l'aide de l'élément ```<link>```, qui nécessite trois attributs:
+
+- ```href ``` est égal au chemin d'accès du fichier CSS.
+- ```type ``` égal à text/css.
+- ```rel ``` égal à la feuille de style.
+Dans cette leçon, vous avez appris les deux endroits dans lesquels vous pouvez écrire un code CSS, mais vous n'avez pas écrit de code CSS.
+
+Dans la leçon suivante, vous apprendrez la structure de base et la syntaxe de CSS afin que vous puissiez commencer à utiliser CSS seul.
+
+Si le fichier CSS est stocké dans le même répertoire que votre fichier HTML, vous pouvez spécifier un chemin relatif au lieu d'une URL, de la manière suivante:
+
+```<link href = "/ style.css" type = "text/css" rel="stylesheet">```
+L'utilisation d'un chemin relatif est un moyen très courant de lier une feuille de style.
+
