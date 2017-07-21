@@ -218,7 +218,7 @@ L'attribut target spécifie qu'un lien doit s'ouvrir dans une nouvelle fenêtre.
 Pour un lien à ouvrir dans une nouvelle fenêtre, l'attribut target requiert une valeur de _blank. L'attribut cible peut être ajouté directement à la balise d'ouverture de l'élément d'ancrage, tout comme l'attribut href 
 exemple ```<a href="https://Wikipedia.org" target="_blank">wikipedia</a>```
 ## Images
-### ÉLÉMENTS HTML COMMUNS
+
 All of the elements you've learned about so far (headings, paragraphs, lists, and links) all share one thing in common: they're composed entirely of text! What if you want to add content to your web page that isn't composed of text, like images?
 L'élément ```<img>``` vous permet d'ajouter des images à une page Web. Cet élément est spécial car il n'a pas de balise de fermeture, il n'a qu'une balise d'ouverture. C'est parce que l'élément ```<img>``` est un élément à fermeture automatique.
 ```
@@ -281,7 +281,7 @@ Dans l'exemple ci-dessus, un élément HTML valide (un élément d'ancrage) a é
 
 ***Félicitations*** pour avoir complété la deuxième unité de HTML et CSS! Dans cette unité, vous avez appris comment ajouter du contenu à une page Web en utilisant certains des éléments HTML les plus courants.
 
-Examinons ce que vous avez appris jusqu'ici:
+***Examinons ce que vous avez appris jusqu'ici:***
 
 Vous pouvez ajouter des titres de différentes tailles en utilisant les différents éléments de la rubrique: ```<h1> à <h6>```.
 Les paragraphes sont ajoutés avec l'élément ```<p>```.
@@ -295,3 +295,46 @@ L'espace blanc dans le fichier HTML n'affecte pas le positionnement des élémen
 Le W3C recommande 2 espaces d'indentation pour les éléments HTML imbriqués.
 Les commentaires sont utilisés pour prendre des notes dans un fichier HTML. Vous pouvez ajouter un commentaire avec ```<! - C'est un commentaire ->```.
 Jusqu'à présent, le contenu que vous avez ajouté dans cette unité n'est pas très attrayant visuellement. Dans l'unité suivante, vous apprendrez à modifier l'apparence de votre contenu à l'aide de CSS.
+
+## La configuration css
+### Qu'est-ce que CSS?
+Jusqu'à présent, vous avez appris les principes fondamentaux du HTML, y compris la structure de base requise pour configurer les fichiers HTML, ainsi que les éléments HTML communs utilisés pour ajouter du contenu à une page Web.
+
+Malheureusement, les éléments HTML que nous avons utilisés pour ajouter du contenu à une page Web ont entraîné des résultats assez fous dans le navigateur. Par exemple, il semble que tout le contenu semble être de la même couleur, avoir la même police et n'offrir aucun contrôle direct sur la taille de la police (en dehors des six options d'en-tête différentes). Comment rendre notre HTML plus attrayant visuellement?
+
+CSS ou Cascading Style Sheets, est un langage que les développeurs Web utilisent pour classer le contenu HTML sur une page Web. Si vous souhaitez modifier les couleurs, les types de polices, les tailles de police, les ombres, les images, le positionnement des éléments, etc., CSS est l'outil pour le travail!
+
+Dans cette unité, vous apprendrez d'abord comment intégrer CSS afin que vous puissiez style du contenu. Vous découvrirez également la structure de base de CSS et apprenez à utiliser sa syntaxe. Dans les unités ultérieures, nous explorerons en détail comment modifier la couleur, les options de police et bien plus encore.
+
+## Commençons!
+Bien que CSS soit un langage différente de HTML, il est possible d'écrire un code CSS directement dans un fichier HTML. Ceci est possible en raison de l'élément ```<style>``.
+
+L'élément ```<style>``` vous permet d'écrire un code CSS entre ses balises d'ouverture et de fermeture. Pour utiliser l'élément ```<style>```, il doit être placé à l'intérieur de ```<head>```.
+
+```
+<head>
+  <style>
+
+  </style>
+</head>
+```
+Une fois que ```<style>``` est placé dans la ```<head>``` de la page Web, nous pouvons commencer à écrire le code CSS.
+```
+<head>
+  <style>
+    h2 {
+     font-family: Arial;
+    }
+  </style>
+</head>
+```
+Ne vous inquiétez plus pour le code CSS dans l'exemple ci-dessus, vous en apprendrez plus sur les détails du code CSS dans les leçons suivantes
+
+
+## Structure vs Style
+Bien que l'élément ```<style>``` vous permet d'écrire un code CSS dans des fichiers HTML, ce mélange de HTML et CSS peut entraîner un code difficile à lire et à conserver.
+
+Il est courant pour les développeurs d'ajouter des quantités substantielles de style CSS personnalisé à une page Web. Lorsque tout ce code CSS est placé dans un élément ```<style>``` dans un fichier HTML, vous risquez les deux choses suivantes:
+
+Création d'un grand fichier HTML difficile à lire et à gérer (par vous et d'autres développeurs). Dans l'ensemble, cela peut entraîner un flux de travail inefficace.
+Maintenir une distinction claire entre la structure de la page Web (HTML) et le style de page Web (CSS)
