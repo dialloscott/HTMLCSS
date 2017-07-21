@@ -385,3 +385,124 @@ Si le fichier CSS est stocké dans le même répertoire que votre fichier HTML, 
 ```<link href = "/ style.css" type = "text/css" rel="stylesheet">```
 L'utilisation d'un chemin relatif est un moyen très courant de lier une feuille de style.
 
+## CSS
+Vous avez appris comment séparer HTML et CSS en deux fichiers et les lier ensemble, mais vous n'avez pas appris comment la syntaxe CSS est utilisée pour façonner des éléments sur une page Web.
+
+Dans cette leçon, vous apprendrez la structure de base et la syntaxe de CSS afin que vous puissiez commencer à coiffer les éléments de la page Web.
+
+### Commençons!
+
+## Sélecteurs d'éléments
+Nous avons discuté du style des éléments HTML en utilisant CSS, mais comment est-il effectivement fait?
+
+Pour classer un élément HTML à l'aide de CSS, vous devez d'abord sélectionner cet élément dans le fichier CSS. Par exemple, pour créer un élément ```<p>```, la syntaxe pour le sélectionner en utilisant CSS est:
+
+```
+p {
+
+}
+```
+Dans l'exemple ci-dessus, tous les éléments de paragraphe sont sélectionnés à l'aide d'un sélecteur CSS. Le sélecteur (dans ce cas) est ```p```. Notez que le sélecteur CSS correspond essentiellement à la balise HTML de cet élément, mais sans les crochets.
+
+***Remarque***: Le sélecteur ```p``` dans l'exemple ci-dessus sélectionnera tous les éléments ```<p>``` sur la page Web. Plus tard dans ce cours, vous apprendrez à utiliser des sélecteurs CSS plus spécifiques afin que vous puissiez sélectionner n'importe quel élément souhaité.
+
+### Déclarations CSS
+Maintenant que vous connaissez les bases de la syntaxe CSS, choisissons certains des éléments de la page Web.
+
+## Sélecteurs multiples
+Le style avec CSS serait très inefficace si vous étiez forcé de modifier manuellement la même propriété sur de nombreux éléments.
+
+Par exemple, et si vous vouliez changer la couleur de 10 éléments différents en Aquamarine en CSS?
+
+Heureusement, vous pouvez sélectionner plusieurs éléments à la fois afin que vous puissiez économiser du temps en définissant une propriété partagée.
+```
+h1, h2, p {
+  color: green;
+}
+```
+Dans l'exemple ci-dessus, le titre ```<h1>```, ```<h2>``` et le paragraphe ont tous été conçus pour apparaître en vert à l'aide d'un sélecteur à plusieurs éléments. Un sélecteur à plusieurs éléments peut vous faire gagner du temps lorsque vous souhaitez créer un style identique sur de nombreux éléments.
+
+
+## Le sélecteur universel
+Il existe un sélecteur spécial qui peut sélectionner instantanément chaque élément sur la page Web: le sélecteur universel.
+
+```
+* {
+  font-family: Arial;
+}
+```
+Dans l'exemple ci-dessus, le sélecteur universel, ```*```, est utilisé pour sélectionner chaque élément sur la page et définir la police dans Arial.
+
+Qu'est-ce qui rend le sélecteur universel si spécial? Lorsque tous les éléments d'une page Web nécessitent le même style, il est souvent plus efficace de définir ce style à l'aide du sélecteur universel. Par la suite, vous pouvez modifier (ou supprimer) ce style pour des éléments spécifiques qui ne l'exigent pas.
+
+Dans une leçon ultérieure, vous utiliserez le sélecteur universel pour vous aider à comprendre comment les éléments HTML sont définis dans le navigateur et comment positionner ces éléments.
+
+
+## Indentation et espacement
+Tout comme HTML, CSS suit certaines pratiques exemplaires pour l'espacement et l'indentation.
+```
+h1 {
+  color :blue;
+}
+
+p {
+  color: blue;
+}
+```
+Un espace doit être utilisé entre le sélecteur et l'accolade d'ouverture ```({)```.
+Il ne devrait pas exister d'espace supplémentaire entre l'ouverture et la fermeture des accolades ```({et})``` et les déclarations CSS (comme dans l'exemple ci-dessus).
+Deux espaces d'indentation devraient être utilisés pour les déclarations CSS.
+Une ligne d'espacement devrait exister entre les règles CSS. Dans l'exemple ci-dessus, il existe une ligne d'espacement entre la règle CSS pour l'en-tête et la règle CSS pour le paragraphe.
+Les fichiers CSS peuvent devenir longs car le style est ajouté à une page Web. L'espacement et l'indentation appropriés permettent de garder le code CSS maintenable et lisible pour vous et d'autres développeurs.
+
+## Les commentaires
+Tout comme HTML, vous pouvez également laisser des commentaires dans votre fichier CSS. Les commentaires CSS commencent par ```/ * ``` et se terminent par ```* /```, ainsi:
+
+```/ * Ceci est un commentaire en CSS! * / ```
+L'inclusion de commentaires dans votre code est utile pour de nombreuses raisons:
+
+Ils vous aident (et d'autres) à comprendre votre code si vous décidez de revenir et de l'examiner à une date plus tardive.
+Ils vous permettent d'expérimenter un nouveau code sans avoir à supprimer un ancien code.
+ ```
+ / * Style de paragraphe * /
+p {
+  color: blue;
+}
+```
+Dans l'exemple ci-dessus, un commentaire permet de spécifier le style CSS pour les paragraphes.
+
+```
+/ *
+h1 {
+  color: red;
+}
+* /
+```
+Dans l'exemple ci-dessus, une règle CSS valide a été "commentée". Cette pratique est utile lorsque vous souhaitez expérimenter un nouveau code sans avoir à supprimer un ancien code.
+
+
+## Revoyons: la structure et syntaxe de base de CSS
+Bon travail! Vous avez appris les bases de la structure CSS et de la syntaxe. Nous continuerons à bâtir sur ces bases car vous en apprendrez plus sur CSS.
+
+### Examinons ce que vous avez appris jusqu'ici:
+
+1. Un sélecteur CSS cible un élément HTML.
+
+2. Déclarations CSS style éléments HTML. Les déclarations doivent contenir les deux éléments suivants:
+
+Propriété - la propriété que vous souhaitez style.
+Valeur - la valeur de la propriété que vous définissez.
+3. Les déclarations CSS doivent se terminer par un point-virgule (;)
+
+4. Une règle CSS consiste en un sélecteur CSS et les déclarations à l'intérieur du sélecteur.
+
+5. Les sélecteurs à plusieurs éléments peuvent être utilisés pour modéliser plusieurs éléments à la fois.
+
+6. Les commentaires gardent le code facile à lire et vous permettent d'expérimenter un nouveau code sans devoir enlever l'ancien code.
+
+7. CSS suit certaines pratiques exemplaires pour l'espacement et l'indentation:
+
+Une ligne d'espacement entre un sélecteur et l'accolade d'ouverture.
+Pas d'espacement entre les déclarations CSS et les accolades d'ouverture et de fermeture de la règle CSS.
+Deux espaces d'indentation pour les déclarations CSS.
+Une ligne d'espacement entre les règles CSS.
