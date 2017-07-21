@@ -217,3 +217,81 @@ Avez-vous déjà cliqué sur un lien et avez-vous observé la page Web qui s'ava
 L'attribut target spécifie qu'un lien doit s'ouvrir dans une nouvelle fenêtre.
 Pour un lien à ouvrir dans une nouvelle fenêtre, l'attribut target requiert une valeur de _blank. L'attribut cible peut être ajouté directement à la balise d'ouverture de l'élément d'ancrage, tout comme l'attribut href 
 exemple ```<a href="https://Wikipedia.org" target="_blank">wikipedia</a>```
+## Images
+### ÉLÉMENTS HTML COMMUNS
+All of the elements you've learned about so far (headings, paragraphs, lists, and links) all share one thing in common: they're composed entirely of text! What if you want to add content to your web page that isn't composed of text, like images?
+L'élément ```<img>``` vous permet d'ajouter des images à une page Web. Cet élément est spécial car il n'a pas de balise de fermeture, il n'a qu'une balise d'ouverture. C'est parce que l'élément ```<img>``` est un élément à fermeture automatique.
+```
+<img src="https://www.example.com/picture.jpg" />
+```
+Notez que l'élément ```<img>``` a un attribut requis appelé src, qui est similaire à l'attribut href dans les liens. Dans ce cas, la valeur de src doit être l'URL de l'image. Notez également que la fin de l'élément ```<img>``` a une barre oblique /. Ceci est nécessaire pour un élément à fermeture automatique.
+
+Une partie d'un développeur Web exceptionnel rend votre site accessible aux utilisateurs de tous horizons. Plus précisément, les utilisateurs malvoyants nécessitent plus de soutien de votre page Web afin qu'ils puissent expérimenter le contenu de votre page.
+
+HTML aide les utilisateurs malvoyants avec l'attribut ```alt```.
+
+L'attribut alt est appliqué spécifiquement à l'élément ```<img>```. La valeur de alt doit être une description de l'image.
+
+```<img src = "#" alt = "Un champ de tournesols jaunes" />```
+Les attributs alt servent également aux fins suivantes:
+
+Si une image ne parvient pas à charger sur une page Web, un utilisateur peut passer la souris sur la zone initialement destinée à l'image et lire une brève description de l'image. Cela est possible grâce à la description que vous fournissez dans l'attribut alt.
+Les utilisateurs malvoyants naviguent souvent sur le Web à l'aide d'un logiciel de lecture d'écran. Lorsque vous incluez l'attribut alt, le logiciel de lecture d'écran peut lire la description de l'image sur l'utilisateur malveillant.
+Remarque: Si l'image sur la page Web n'est pas celle qui transmet toute information significative à un utilisateur (malvoyant ou autrement), l'attribut alt ne doit pas être utilisé.
+
+## Rupture de line 
+Vous avez vu comment la modification de l'espacement entre le code dans un fichier HTML n'affecte pas le positionnement des éléments dans le navigateur. Si vous souhaitez modifier l'espacement dans le navigateur, vous pouvez utiliser l'élément de rupture de ligne HTML: ```<br />```.
+
+L'élément de rupture de ligne est une balise à fermeture automatique. Vous pouvez l'utiliser n'importe où dans votre code HTML et une pause de ligne sera affichée dans le navigateur.
+Remarque: les sauts de ligne ne sont pas la manière standard de manipuler le positionnement des éléments HTML, mais il est probable que vous les rencontrerez de temps en temps. Dans les unités ultérieures, vous apprendrez des techniques plus avancées pour le positionnement des éléments HTML.
+
+## Indentation
+Whitespace rend le code plus facile à lire en augmentant (ou en diminuant) l'espacement entre les lignes de code. Pour rendre la structure du code plus facile à lire, les développeurs Web utilisent souvent l'indentation.
+
+Le World Wide Web Consortium (W3C) est responsable du maintien des normes de style HTML. Au moment de l'écriture, le W3C recommande 2 espaces d'indentation lors de l'écriture du code HTML. L'indentation est destinée à des éléments imbriqués dans d'autres éléments.
+```
+<ul>
+  <li> Violon </li>
+  <li> Viola </li>
+  <li> Violoncelle </li>
+  <li> Bass </li>
+<ul>
+```
+Dans l'exemple ci-dessus, les éléments de la liste sont indentés avec deux espaces. Les espaces sont insérés à l'aide de la barre d'espace de votre clavier. Sauf si votre éditeur de texte a été configuré correctement, la touche ```"TAB"``` de votre clavier ne doit pas être utilisée pour l'indentation.
+
+## Les Commentaires
+
+Les fichiers HTML vous permettent également d'ajouter des commentaires à votre code.
+
+Les commentaires commencent par ``` <! - et se terminent par ->```. Tous les caractères intermédiaires seront traités comme un commentaire.
+
+```<! - C'est un commentaire que le navigateur n'apparaîtra pas. ->```
+L'inclusion de commentaires dans votre code est utile pour de nombreuses raisons:
+
+Ils vous aident (et d'autres) à comprendre votre code si vous décidez de revenir et de l'examiner à une date plus tardive.
+Ils vous permettent d'expérimenter un nouveau code sans avoir à supprimer un ancien code.
+```<! - Section des films préférés ->```
+<P> Voici une liste de mes films préférés: </ p>
+Dans l'exemple ci-dessus, le commentaire sert à indiquer que le texte suivant constitue une section particulière de la page.
+
+```<! - <a href = "#" target = "_ blank>Facebook</a> ->```
+Dans l'exemple ci-dessus, un élément HTML valide (un élément d'ancrage) a été "commenté". Cette pratique est utile lorsque vous souhaitez expérimenter un nouveau code sans avoir à supprimer un ancien code.
+
+
+
+***Félicitations*** pour avoir complété la deuxième unité de HTML et CSS! Dans cette unité, vous avez appris comment ajouter du contenu à une page Web en utilisant certains des éléments HTML les plus courants.
+
+Examinons ce que vous avez appris jusqu'ici:
+
+Vous pouvez ajouter des titres de différentes tailles en utilisant les différents éléments de la rubrique: ```<h1> à <h6>```.
+Les paragraphes sont ajoutés avec l'élément ```<p>```.
+Les listes non classées sont créées avec l'élément ```<ul>``` et les éléments de liste sont ajoutés à l'aide de l'élément ```<li>```.
+Les listes commandées sont créées avec l'élément ```<ol>``` et les éléments de liste sont ajoutés à l'aide de l'élément ```<li>```.
+Vous pouvez ajouter des liens vers votre page Web à l'aide de l'élément ```<a>```, n'oubliez pas l'attribut href!
+Les images peuvent être ajoutées avec l'élément ```<img>``` - n'oubliez pas l'attribut src!
+Les images aident les utilisateurs malvoyants lorsque les éléments ```<img>``` incluent l'attribut alt.
+Vous pouvez transformer n'importe quoi en un lien en l'enveloppant avec un élément ```<a>```.
+L'espace blanc dans le fichier HTML n'affecte pas le positionnement des éléments dans le navigateur.
+Le W3C recommande 2 espaces d'indentation pour les éléments HTML imbriqués.
+Les commentaires sont utilisés pour prendre des notes dans un fichier HTML. Vous pouvez ajouter un commentaire avec ```<! - C'est un commentaire ->```.
+Jusqu'à présent, le contenu que vous avez ajouté dans cette unité n'est pas très attrayant visuellement. Dans l'unité suivante, vous apprendrez à modifier l'apparence de votre contenu à l'aide de CSS.
