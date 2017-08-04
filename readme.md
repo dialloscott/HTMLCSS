@@ -552,3 +552,45 @@ Au cours des derniers exercices, vous avez vu des exemples CSS qui utilisent des
 Heureusement, vous n'avez pas à le faire! Il existe de nombreuses ressources disponibles sur Internet qui répertorient toutes les couleurs nommées dans CSS, comme celle que nous vous avons associée ci-dessus. Si vous avez besoin d'une couleur nommée, une recherche Google rapide donnera les résultats que vous recherchez.
 
 Essayons de nouvelles couleurs nommées!
+
+```
+p {
+  color : Crimson;
+  background-color: DarkMagenta;
+}
+
+```
+## Les couleurs (RGB) en francais (RVB)
+Bien que les couleurs nommées fournissent 147 options différentes, cela représente une petite quantité lorsque vous considérez la flexibilité du CSS. Pour profiter de la gamme complète de couleurs que CSS prend en charge, vous avez la possibilité d'utiliser des couleurs (RGB).
+
+Les couleurs RGB (Rouge, Vert, Bleu) offrent l'option de 16 777 216 couleurs possibles. Comment est-ce possible?
+
+Les couleurs RGB fonctionnent en mélangeant différentes quantités de rouge (R), vert (G) et bleu (B). Chaque couleur (R, G ou B) peut prendre 1 des 256 valeurs possibles (entre 0 et 255). Il en résulte 16 777 216 couleurs possibles.
+
+Pour utiliser des couleurs RGB, vous pouvez utiliser la valeur rgb () lors du coiffage d'une couleur.
+
+``` 
+h1 {
+  color: rgb(123, 20, 233);
+  background-color: rgb(99, 21, 127);
+}
+
+```
+
+Dans l'exemple ci-dessus, la valeur de la couleur est définie sur rgb (). Les trois nombres entre parenthèses représentent les valeurs pour R, G et B, dans cet ordre. Notez que vous pouvez utiliser rgb () pour les couleurs d'arrière-plan aussi.
+
+Comment pouvez-vous indiquer la couleur des valeurs RVB dans l'exemple ci-dessus? Êtes-vous censé mémoriser 16 777 216 possibilités? Heureusement, non!
+
+Il existe de nombreuses ressources sur Internet connues sous le nom de [color pickers](https://color.adobe.com/create/color-wheel/) qui vous permettent de voir le résultat de différentes valeurs RGB avant de décider d'utiliser une certaine couleur. Si vous avez besoin d'une ressource de sélection de couleur, une recherche Google rapide donnera les résultats que vous recherchez.
+
+``` 
+h1 {
+  color: RGB(54, 74, 101);
+}
+
+p {
+  background-color: RGB(23, 108, 10);
+}
+```
+
+## Les Hex couleurs
