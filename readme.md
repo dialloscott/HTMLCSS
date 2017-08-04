@@ -594,5 +594,6 @@ p {
 }
 ```
 
-## Les Hex couleurs
 ### Prochaine cours ....
+
+## Les Hex couleurs
