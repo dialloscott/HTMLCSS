@@ -535,3 +535,20 @@ Dans CSS, ces deux aspects de conception peuvent être conçus avec les deux pro
 
 1 ``` color ``` Cette propriété classe la couleur de premier plan d'un élément.
 2 ``` background-color ``` Cette propriété définit la couleur d'arrière-plan d'un élément.
+
+```
+  h1 {
+  color: Red;
+  background-color: Blue;
+}
+
+```
+Dans l'exemple ci-dessus, le texte de l'en-tête apparaîtra en rouge, et l'arrière-plan apparaîtra en bleu.
+
+## Les couleurs nommées
+
+Au cours des derniers exercices, vous avez vu des exemples CSS qui utilisent des couleurs comme Rouge, Bleu ou Cyan. Dans CSS, ces couleurs sont techniquement connues sous le nom de couleurs nommées. Il y a 147 [colors nommees](http://www.colors.commutercreative.com/grid/).
+À ce stade, vous vous demandez peut-être que vous mémorisez la liste des 147 couleurs nommées que CSS offre.
+Heureusement, vous n'avez pas à le faire! Il existe de nombreuses ressources disponibles sur Internet qui répertorient toutes les couleurs nommées dans CSS, comme celle que nous vous avons associée ci-dessus. Si vous avez besoin d'une couleur nommée, une recherche Google rapide donnera les résultats que vous recherchez.
+
+Essayons de nouvelles couleurs nommées!
