@@ -506,3 +506,32 @@ Une ligne d'espacement entre un sélecteur et l'accolade d'ouverture.
 Pas d'espacement entre les déclarations CSS et les accolades d'ouverture et de fermeture de la règle CSS.
 Deux espaces d'indentation pour les déclarations CSS.
 Une ligne d'espacement entre les règles CSS.
+
+## Un peu des pratiques
+
+### Le pouvoire des couleurs
+Dans la dernière unité, vous avez appris les bases de CSS
+
+Comment lier des fichiers HTML et CSS ensemble
+Le fonctionnement de la syntaxe CSS
+En chemin, nous avons proposé différentes propriétés des éléments HTML, mais les détails de chaque propriété n'ont pas été expliqués. Par exemple, nous avons changé les couleurs des en-têtes et des paragraphes, mais nous n'avons pas exploré la puissance totale et la polyvalence de la couleur.
+
+Les sites Web professionnels utilisent souvent divers aspects de la couleur afin de créer une expérience utilisateur (UX) visuellement attrayante. Dans cette leçon, vous apprendrez à utiliser CSS pour façonner les pages Web avec des couleurs.
+
+## Commençons!
+
+#### Avant-plan et arrière-plan
+
+Avant de discuter des spécificités de la couleur, il est important de faire deux distinctions sur la couleur. La couleur peut affecter les aspects de conception suivants:
+
+- La couleur du premier plan
+- La couleur de fond
+
+La couleur du premier plan est la couleur dans laquelle apparaît un élément. Par exemple, lorsqu'un titre est appelé vert, la couleur de premier plan de l'en-tête a été conçue.
+
+À l'inverse, lorsqu'un titre est conçu de sorte que son arrière-plan apparaît jaune, la couleur d'arrière-plan de l'en-tête a été conçue
+
+Dans CSS, ces deux aspects de conception peuvent être conçus avec les deux propriétés suivantes:
+
+1 ``` color ``` Cette propriété classe la couleur de premier plan d'un élément.
+2 ``` background-color ``` Cette propriété définit la couleur d'arrière-plan d'un élément.
