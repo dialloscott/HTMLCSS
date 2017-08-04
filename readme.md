@@ -533,8 +533,9 @@ La couleur du premier plan est la couleur dans laquelle apparaît un élément. 
 
 Dans CSS, ces deux aspects de conception peuvent être conçus avec les deux propriétés suivantes:
 
-1 ``` color ``` Cette propriété classe la couleur de premier plan d'un élément.
-2 ``` background-color ``` Cette propriété définit la couleur d'arrière-plan d'un élément.
+- ``` color ``` Cette propriété classe la couleur de premier plan d'un élément.
+
+- ``` background-color ``` Cette propriété définit la couleur d'arrière-plan d'un élément.
 
 ```
   h1 {
