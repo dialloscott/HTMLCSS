@@ -682,3 +682,16 @@ h1 {
 Dans CSS, la dernière des déclarations multiples prend la priorité. Dans l'exemple ci-dessus, si le navigateur de l'utilisateur prend en charge rgba (), cette couleur sera appliquée à l'en-tête. Si ce n'est pas le cas, CSS utilisera la première déclaration de couleur rgb (), en tant que sauvegarde.
 
 L'utilisation de déclarations redondantes vous permet de prendre en charge autant d'utilisateurs que possible sur plusieurs versions de différents navigateurs Internet.
+
+## Revue: des Couleurs
+Bon travail! Vous avez appris à façonner un aspect important de l'expérience utilisateur: la couleur.
+
+Examinons ce que vous avez appris jusqu'ici:
+La couleur de premier plan se réfère à la couleur réelle d'un élément, style avec la propriété de couleur.
+La couleur d'arrière-plan se réfère à la couleur derrière un élément, avec la propriété de couleur d'arrière-plan.
+Il existe 147 couleurs nommées disponibles.
+Les couleurs RGB et hexadécimales offrent plus de 16 millions de possibilités de couleurs.
+HSL est une nouvelle façon de définir les couleurs dans CSS3.
+Vous pouvez modifier l'opacité d'une couleur avec des couleurs RGBa ou HSLa.
+Tous les navigateurs ne prennent pas en charge les fonctionnalités CSS plus récentes, comme l'opacité ou HSL, de sorte que des déclarations supplémentaires devraient être faites pour supporter un large public d'utilisateurs.
+Il existe de nombreuses ressources de sélection de couleurs disponibles sur Internet pour vous aider à sélectionner des couleurs spécifiques, ainsi que de fournir des couleurs dans différents formats.
