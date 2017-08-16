@@ -594,6 +594,91 @@ p {
 }
 ```
 
-### Prochaine cours ....
 
 ## Les Hex couleurs
+
+Il existe un moyen supplémentaire de spécifier des couleurs dans CSS: les codes de couleurs hexadécimales, souvent appelés ```«codes de couleur hexadécimal»```, pour une courte durée.
+
+Les codes de couleur Hex offrent également 16,777,216 options de couleurs, mais ils suivent une syntaxe différente.
+
+Lors de la spécification d'un mélange de couleurs RGB, les valeurs sont dans la base 10. Les codes de couleur Hex, cependant, utilisent la base 16 ou la base hexadécimale (d'où le nom), pour spécifier des mélanges de couleurs.
+```
+h1 {
+  color: #09AA34;
+}
+```
+Lorsqu'on lit de gauche à droite, chaque groupe de deux caractères répond à une valeur pour rouge, vert et bleu, respectivement. Dans l'exemple ci-dessus, 09 fait référence à la valeur pour le rouge, AA se réfère à la valeur pour le vert et 34 fait référence à la valeur pour le bleu. Tous les codes de couleur hexadécimal commencent par un caractère #.
+
+Existe-t-il une différence entre les valeurs RVB et les codes de couleurs hexadécimales?
+
+Pas vraiment. Les valeurs RVB et les codes de couleurs hexadécimales sont différents pour représenter la même chose: la couleur. Il est possible de convertir en va-et-vient entre les valeurs RVB et les codes de couleurs hexadécimales (les sélectionneurs de couleurs aident souvent cette conversion).
+
+Remarque: Lorsqu'un code de couleur hexadéifférique est entièrement composé de même caractère, la couleur hexadécimal peut être abrégée, de la manière suivante:
+```
+h1 {
+  color: #FFFFFF;
+  color: #FFF; /* nous donne la meme couleur */
+}
+
+h2 {
+  color: #AA33BB;
+  color: #A3B; /* nous donne la meme couleur */
+}
+```
+
+## Les couleurs HLS
+
+La révision actuelle de CSS, CSS3 (au moment de la rédaction de cet article), introduit une nouvelle façon de spécifier des couleurs à l'aide de couleurs HSL.
+
+HSL signifie Hue, Saturation et Lightness. Plus précisément, c'est ce que chacun veut dire:
+
+Hue - le terme technique qui décrit ce que nous entendons comme "couleur". En HSL, la teinte est représentée sur une roue de couleur. Il peut prendre des valeurs comprises entre 0 et 360.
+Saturation - la quantité de gris dans une couleur donnée. Dans HSL, la saturation est spécifiée en utilisant un pourcentage entre 0% et 100%. Le pourcentage de 0% représente une nuance de gris, alors que 100% représente une saturation totale.
+Légèreté: la quantité de blanc dans une couleur donnée. Semblable à la saturation, la légèreté est spécifiée en utilisant un pourcentage compris entre 0% et 100%. Le pourcentage de 0% représente le noir, alors que 100% représente le blanc. 50% est normal.
+Vous pouvez utiliser les couleurs HSL dans votre CSS comme ceci:
+```
+h1 {
+  color: hsl(182, 20%, 50%);
+}
+```
+Notez que l'utilisation de HSL est très similaire à l'utilisation de RGB.
+
+Remarque: Parce que HSL fait partie de CSS3, les navigateurs plus anciens peuvent ne pas l'être. Dans un exercice ultérieur, vous apprendrez comment contourner les problèmes de support pour les couleurs.
+
+## Valeur Alpha: a
+Vous avez appris que les codes de couleurs RVB et hexadécimales sont deux méthodes différentes pour représenter la même chose: la couleur. Cependant, il existe une caractéristique que les couleurs RVB supportent que les codes couleur hexadécimal ne soient pas: une opacité.
+
+L'opacité est une mesure de la transparence d'une couleur. Pour modifier l'opacité dans les couleurs RVB, CSS offre la valeur rgba (). Notez la légère différence dans rgb () et rgba ().
+
+Le caractère supplémentaire dans la valeur rgba () est connu sous le nom de valeur alpha. Il représente l'opacité d'une couleur. La valeur alpha peut être un nombre compris entre 0 ou 1, inclus.
+```
+h1 {
+  color: rgba(123, 88, 9, 0.5);
+}
+```
+Dans l'exemple ci-dessus, la valeur alpha a été définie sur 0,5. Ceci indique que la couleur du titre sera réglée à 50% de son opacité normale.
+
+Remarque: La valeur alpha peut également être utilisée pour les couleurs HSL, en utilisant hsla ():
+```
+h1 {
+  color: hsla(239, 45%, 22%, 0.4);
+}
+```
+## Declarations des couleurs
+
+Les couleurs RVB, les codes de couleur hexadélicos et les couleurs HSL offrent aux développeurs Web une quantité extraordinaire d'options de personnalisation des couleurs. Comme ces propriétés deviennent plus avancées, cependant, il est important de garder à l'esprit que tous les utilisateurs ne naviguent pas sur Internet avec le même navigateur, sans parler de la même version d'un navigateur donné.
+
+Comment cela affecte-t-il le développement web? Les révisions plus récentes du HTML et du CSS affectent les anciens navigateurs. Les navigateurs plus anciens, au fil du temps, seront datés (éventuellement obsolètes) et ne pourront pas prendre en charge les nouvelles fonctionnalités CSS. Par exemple, de nombreux navigateurs plus anciens ne supporte pas RGBa, HSL ou HSLa.
+
+Pour cette raison, nous devons inclure des options de couleur redondantes dans notre code CSS qui peuvent répondre à un large éventail de navigateurs différents.
+
+Plus précisément, nous pouvons ajouter plusieurs déclarations de couleur CSS, au cas où le navigateur d'un utilisateur ne peut pas supporter une certaine déclaration.
+```
+h1 {
+  color: rgb(22, 34, 88);
+  color: rgba(22, 34, 88, 0.4);
+}
+```
+Dans CSS, la dernière des déclarations multiples prend la priorité. Dans l'exemple ci-dessus, si le navigateur de l'utilisateur prend en charge rgba (), cette couleur sera appliquée à l'en-tête. Si ce n'est pas le cas, CSS utilisera la première déclaration de couleur rgb (), en tant que sauvegarde.
+
+L'utilisation de déclarations redondantes vous permet de prendre en charge autant d'utilisateurs que possible sur plusieurs versions de différents navigateurs Internet.
