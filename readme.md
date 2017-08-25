@@ -728,3 +728,30 @@ La pratique de la typographie existe depuis des siècles! Au fil du temps, les t
 - Sans-Serif: les lettres de ces polices n'ont pas de détails supplémentaires sur les extrémités de chaque lettre. Au lieu de cela, les lettres ont des bords droits et plats. Quelques exemples incluent Arial ou Helvetica.
 
 La plupart des polices que nous allons étudier dans cette leçon seront soit des fontes serif ou sans serif.
+
+## Police de rechange
+
+Plus tôt, vous avez appris que les utilisateurs doivent avoir les polices spécifiées dans la feuille de style installée sur leur ordinateur afin que leur navigateur affiche cette police. Que se passe-t-il lorsqu'une police n'est pas installée sur l'ordinateur d'un utilisateur?
+
+La plupart des ordinateurs ont un petit ensemble de types de caractères pré-installés. Ce petit ensemble comprend des polices Serif et des polices sans serif, comme Times New Roman et Arial, respectivement.
+
+Lorsque la feuille de style spécifie une police non installée sur l'ordinateur d'un utilisateur, les polices pré-installées peuvent être utilisées comme polices de secours pour les utilisateurs.
+
+Pour utiliser les polices de recharge, la syntaxe suivante est requise:
+```
+h1 {
+  font-family: Garamond, Times, serif;
+}
+```
+La règle CSS ci-dessus indique: "Utilisez la police Garamond pour tous les éléments ```<h1>``` sur la page Web. Si cette police n'est pas disponible, utilisez la police Times. Si ces deux polices ne sont pas disponibles, utilisez une police Serif préinstallée sur l'ordinateur de l'utilisateur. " Les polices spécifiées après Garamond sont les polices de secours.
+
+Les polices Fallback aident à assurer une expérience constante pour le public diversifié des utilisateurs qui visitent un site.
+
+## Plus de polices
+
+De nouvelles polices sont constamment développées. Parce qu'il y a tellement de nouvelles polices disponibles, il serait irréaliste de s'attendre à ce que les utilisateurs les installent sur leurs ordinateurs.
+
+Heureusement, vous ne devez pas prédire quelles polices sont installées sur l'ordinateur d'un utilisateur. Beaucoup (mais pas tous) des nouvelles polices qui apparaissent quotidiennement sont centralisés dans les répertoires mis à disposition pour un usage public.
+Par exemple, Google offre [Google Fonts](https://fonts.google.com/) , un répertoire de milliers de polices open-source qui sont libres d'utiliser par n'importe qui.
+
+Pour utiliser ces polices, vous pouvez lier une police Google spécifique dans votre code HTML et l'utiliser immédiatement dans votre feuille de style. Parce que le fichier HTML est directement lié à la Police Google, le navigateur d'un utilisateur peut afficher la police de caractères que vous avez spécifiée. Cela évite de déterminer si oui ou non cette police est installée sur l'ordinateur d'un utilisateur.
