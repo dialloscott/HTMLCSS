@@ -755,3 +755,23 @@ Heureusement, vous ne devez pas prédire quelles polices sont installées sur l'
 Par exemple, Google offre [Google Fonts](https://fonts.google.com/) , un répertoire de milliers de polices open-source qui sont libres d'utiliser par n'importe qui.
 
 Pour utiliser ces polices, vous pouvez lier une police Google spécifique dans votre code HTML et l'utiliser immédiatement dans votre feuille de style. Parce que le fichier HTML est directement lié à la Police Google, le navigateur d'un utilisateur peut afficher la police de caractères que vous avez spécifiée. Cela évite de déterminer si oui ou non cette police est installée sur l'ordinateur d'un utilisateur.
+Pour utiliser une police Google, vous pouvez utiliser un élément ```<link>```, comme vous l'avez fait pour une feuille de style CSS:
+
+```
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" type="text/css" rel="stylesheet" >
+</head>
+```
+Dans l'exemple ci-dessus, l'attribut href est défini sur l'URL suivante, qui a été extraite de Google Fonts:
+```
+https://fonts.googleapis.com/css?family=Raleway
+```
+L'URL dans l'exemple ci-dessus spécifie la police de caractères Raleway à partir de Polices Google.
+
+Vous pouvez utiliser la nouvelle police exactement comme vous voudriez utiliser une autre police:
+```
+h1 {
+  font-family: Raleway, Georgia, serif;
+}
+```
+Vous avez maintenant accès à des milliers de polices nouvelles, modernes et gratuites.
