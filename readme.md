@@ -724,4 +724,7 @@ h1 {
 ## Serif vs Sans-Serif
 La pratique de la typographie existe depuis des siècles! Au fil du temps, les typographes ont raffiné leur métier et ont développé de nombreux types de caractères, ce qui leur a permis, dans certains cas, de les classer comme l'un des deux types suivants: les polices Serif et les polices Sans-Serif.
 
-1. Serif - les lettres de ces polices ont des détails supplémentaires sur les extrémités de chaque lettre. Les exemples incluent des polices comme Times New Roman ou Georgia, entre autres.
+- Serif: les lettres de ces polices ont des détails supplémentaires sur les extrémités de chaque lettre. Les exemples incluent des polices comme Times New Roman ou Georgia, entre autres.
+- Sans-Serif: les lettres de ces polices n'ont pas de détails supplémentaires sur les extrémités de chaque lettre. Au lieu de cela, les lettres ont des bords droits et plats. Quelques exemples incluent Arial ou Helvetica.
+
+La plupart des polices que nous allons étudier dans cette leçon seront soit des fontes serif ou sans serif.
