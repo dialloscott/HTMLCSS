@@ -712,3 +712,16 @@ Dans l'exemple ci-dessus, la famille de polices pour tous les éléments de l'en
 
 Lorsque vous définissez des caractères sur une page Web, gardez à l'esprit les points suivants:
 - La police spécifiée dans une feuille de style doit être installée sur l'ordinateur d'un utilisateur afin que cette police s'affiche lorsqu'un utilisateur visite la page Web. Nous allons apprendre à contourner ce problème lors d'un exercice ultérieur.
+- Vous avez probablement remarqué que nous ne spécifions pas une police de caractères dans les exercices précédents de ce cours. Comment le navigateur sait-il exactement quel type d'interface doit utiliser lors de l'affichage de la page Web? La police de caractères par défaut pour tous les éléments HTML est Times New Roman. Vous pouvez être familier avec cette police de caractères si vous avez déjà utilisé un traitement de texte formaté.
+- C'est une bonne pratique de limiter le nombre de caractères utilisés sur une page Web à 2 ou 3.
+- Lorsque le nom d'une police de caractères comporte plus d'un mot, il doit être placé entre guillemets (sinon il ne sera pas reconnu), de la manière suivante:
+
+``` 
+h1 {
+  font-family: "Courier New";
+}
+```
+## Serif vs Sans-Serif
+La pratique de la typographie existe depuis des siècles! Au fil du temps, les typographes ont raffiné leur métier et ont développé de nombreux types de caractères, ce qui leur a permis, dans certains cas, de les classer comme l'un des deux types suivants: les polices Serif et les polices Sans-Serif.
+
+1. Serif - les lettres de ces polices ont des détails supplémentaires sur les extrémités de chaque lettre. Les exemples incluent des polices comme Times New Roman ou Georgia, entre autres.
