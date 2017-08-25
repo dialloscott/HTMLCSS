@@ -695,3 +695,20 @@ HSL est une nouvelle façon de définir les couleurs dans CSS3.
 Vous pouvez modifier l'opacité d'une couleur avec des couleurs RGBa ou HSLa.
 Tous les navigateurs ne prennent pas en charge les fonctionnalités CSS plus récentes, comme l'opacité ou HSL, de sorte que des déclarations supplémentaires devraient être faites pour supporter un large public d'utilisateurs.
 Il existe de nombreuses ressources de sélection de couleurs disponibles sur Internet pour vous aider à sélectionner des couleurs spécifiques, ainsi que de fournir des couleurs dans différents formats.
+
+
+## Famille de polices
+
+Si vous avez déjà utilisé un processeur de texte formaté, il est probable que vous avez probablement utilisé une fonctionnalité qui vous a permis de modifier le «type de police» que vous avez tapé. L'expression «type de police» désigne le type de police de caractères technique ou famille de polices.
+
+Pour modifier la police de caractères de votre page Web, vous pouvez utiliser la propriété ``` font-family```.
+
+``` 
+h1 {
+  font-family: Garamond;
+}
+```
+Dans l'exemple ci-dessus, la famille de polices pour tous les éléments de l'en-tête principal a été définie sur Garamond.
+
+Lorsque vous définissez des caractères sur une page Web, gardez à l'esprit les points suivants:
+- La police spécifiée dans une feuille de style doit être installée sur l'ordinateur d'un utilisateur afin que cette police s'affiche lorsqu'un utilisateur visite la page Web. Nous allons apprendre à contourner ce problème lors d'un exercice ultérieur.
