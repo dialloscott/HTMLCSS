@@ -775,3 +775,31 @@ h1 {
 }
 ```
 Vous avez maintenant accès à des milliers de polices nouvelles, modernes et gratuites.
+
+## Taille de police 1
+La modification de la police de caractères n'est pas la seule façon de personnaliser le texte. Souvent, différentes sections d'une page Web et sont mises en évidence en modifiant la taille de la police.
+
+Pour modifier la taille du texte sur votre page Web, vous pouvez utiliser la propriété font-size.
+``` 
+p {
+  font-size: 18px;
+}
+```
+Dans l'exemple ci-dessus, la taille de police de tous les paragraphes a été définie sur 18px. Qu'entend-on exactement par px?
+
+Les mesures requièrent des unités pour qu'elles soient utiles (par exemple, des kilogrammes de poids ou des miles de distance). Le format de police nécessite également une unité de mesure.
+
+Dans l'exercice suivant, nous explorerons en détail les unités de mesure disponibles pour la taille de la police.
+
+## Taille de police 2
+
+Il existe trois unités de mesure pour la taille de la police:
+
+1. px - Représente l'unité de pixels. L'affichage d'un moniteur d'ordinateur peut être mesuré en pixels. Un pixel est un petit point sur l'affichage. Quelle est la taille? La plupart des moniteurs d'ordinateur ont une résolution de 72 pixels par pouce, donc un pixel représente environ 1 / 72e de pouce. Les pixels sont parfois appelés points. Les pixels sont utilisés pour définir la taille exacte d'un élément, dans ce cas, du texte.
+```
+p {
+  font-size: 18px;
+}
+```
+
+2. ems - prononcé juste comme  "em". Un em est égal à la largeur de la lettre "m". Les Ems sont une unité de mesure relative. Ils changent la taille du texte par rapport à la taille du texte de l'élément parent.
