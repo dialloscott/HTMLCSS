@@ -775,3 +775,155 @@ h1 {
 }
 ```
 Vous avez maintenant accès à des milliers de polices nouvelles, modernes et gratuites.
+
+## Taille de police 1
+La modification de la police de caractères n'est pas la seule façon de personnaliser le texte. Souvent, différentes sections d'une page Web et sont mises en évidence en modifiant la taille de la police.
+
+Pour modifier la taille du texte sur votre page Web, vous pouvez utiliser la propriété font-size.
+``` 
+p {
+  font-size: 18px;
+}
+```
+Dans l'exemple ci-dessus, la taille de police de tous les paragraphes a été définie sur 18px. Qu'entend-on exactement par px?
+
+Les mesures requièrent des unités pour qu'elles soient utiles (par exemple, des kilogrammes de poids ou des miles de distance). Le format de police nécessite également une unité de mesure.
+
+Dans l'exercice suivant, nous explorerons en détail les unités de mesure disponibles pour la taille de la police.
+
+## Taille de police 2
+
+Il existe trois unités de mesure pour la taille de la police:
+
+1. px - Représente l'unité de pixels. L'affichage d'un moniteur d'ordinateur peut être mesuré en pixels. Un pixel est un petit point sur l'affichage. Quelle est la taille? La plupart des moniteurs d'ordinateur ont une résolution de 72 pixels par pouce, donc un pixel représente environ 1 / 72e de pouce. Les pixels sont parfois appelés points. Les pixels sont utilisés pour définir la taille exacte d'un élément, dans ce cas, du texte.
+```
+p {
+  font-size: 18px;
+}
+```
+
+2. ems - prononcé juste comme  "em". Un em est égal à la largeur de la lettre "m". Les Ems sont une unité de mesure relative. Ils changent la taille du texte par rapport à la taille du texte de l'élément parent.
+
+```
+p {
+  font-size: 1.3em;
+}
+```
+3.% - Les pourcentages sont également une unité de mesure relative. La taille par défaut du texte dans les navigateurs Web est de 16 pixels ou 16px. Lorsque les pourcentages sont utilisés, ils définissent la taille du texte par rapport à cette taille par défaut. Par exemple, le réglage de la taille de la police à 200% équivaut à la définition de 32px.
+```
+p {
+  font-size: 150%;
+}
+```
+## Hauteur de la ligne
+
+Le texte sur une page Web doit également être facile à lire. Lorsque le texte est conçu pour apparaître plus grand, l'espacement vertical entre les lignes de texte peut diminuer, ce qui crée un texte difficile à lire, en particulier dans les paragraphes.
+
+Pour éviter ce problème, vous pouvez modifier l'espacement entre les lignes de texte avec la propriété ```line-height```.
+
+```
+p {
+  line-height: 1.5em;
+}
+```
+Lorsque la hauteur de ligne d'un élément est modifiée, vous manipulez le leader (prononcé "liage") de la police. Lorsque la hauteur de la ligne est augmentée, l'espacement entre les lignes de texte augmente, ce qui peut rendre le texte plus facile à lire.
+
+La hauteur de la ligne peut être modifiée à l'aide de pixels ou d'ems, mais l'unité d'ems est préférée, car ems offre un espacement par rapport à la taille du texte sur la page.
+
+## Espacement des mots
+Vous pouvez également augmenter l'espacement entre les mots dans un morceau de texte, techniquement connu sous le nom ```word-spacing```.
+Pour ce faire, vous pouvez utiliser la propriété de ```word-spaing```:
+``` 
+h1 {
+  word-spacing: 0.3em;
+}
+```
+La quantité par défaut d'espace entre les mots est généralement de 0.25ème. Dans l'exemple ci-dessus, l'espacement des mots est défini sur 0.3em, ce qui représente une augmentation de seulement .05em dans l'espacement des mots.
+
+Il n'est pas courant d'augmenter l'espacement entre les mots, mais cela peut aider à améliorer la lisibilité du texte en gras ou agrandi. Notons, encore une fois, que l'unité préférée est ems.
+
+## L'espacement des lettres
+
+Vous avez appris comment augmenter l'espacement entre les lignes de texte et les mots, mais il est possible d'être encore plus détaillé: augmenter l'espacement entre les lettres individuelles.
+
+Le terme technique pour ajuster l'espacement entre les lettres s'appelle "kerning". Kerning peut être ajusté avec la propriété ```letter-spacing``` dans CSS.
+```
+h1 {
+  letter-spacing: 0.3em;
+}
+```
+Comme l'espacement des mots, il n'est pas commun d'augmenter le kerning dans le texte, mais parfois il améliore la lisibilité du texte en majuscules.
+## Poids de police
+
+Vous avez probablement remarqué un texte en gras dans de nombreux sites Web différents. Il est courant d'avoir des rubriques ou des mots clés importants. En CSS, la propriété ```font-weight``` devient audible ou désactivée.
+
+```
+p {
+  font-weight: bold;
+}
+```
+Dans l'exemple ci-dessus, tous les paragraphes de la page Web apparaîtraient en gras.
+
+La propriété font-weight a une seconde valeur: normale. Pourquoi existe-t-il?
+
+Si nous voulions que tout le texte sur une page Web apparaisse en gras, nous pourrions sélectionner tous les éléments de texte et modifier leur poids de police en gras. Si une certaine section de texte était nécessaire pour apparaître normale, cependant, nous pourrions définir le poids de la police de cet élément particulier à la normale, essentiellement "éteignant" en gras pour cet élément.
+
+Dans les unités ultérieures, vous apprendrez à être plus sélectif sur les parties de votre site que vous souhaitez styler.
+
+## Le style de police
+
+Vous pouvez également en italiquer un mots avec la propriété font-style.
+La valeur en italique fait apparaître le texte en italique. La propriété font-style a également une valeur normale, pour les mêmes raisons discutées lors de l'exercice précédent.
+
+## Transformation du texte
+
+Le texte peut également être appelé à apparaître dans toutes les majuscules ou minuscules avec la propriété text-transform.
+```
+h1 {
+  text-transform: uppercase;
+}
+```
+
+Le code dans l'exemple ci-dessus définit tous les éléments <h1> pour apparaître en majuscule, quel que soit le cas utilisé pour l'en-tête dans le code HTML. Alternativement, la valeur en ```lowercase``` pourrait être utilisée pour formater du texte en minuscules.
+Puisque le texte peut être saisi directement en majuscules ou minuscules dans un fichier HTML, quel est le point d'une règle CSS qui vous permet de formater une lettre?
+Selon le type de contenu affiché par une page Web, il est judicieux de toujours choisir un élément spécifique dans toutes les lettres majuscules ou minuscules. Par exemple, un site Web qui rapporte des dernières nouvelles peut décider de formater tous les éléments de titre <h1> tels qu'ils apparaissent toujours en toutes les majuscules, comme dans l'exemple ci-dessus. Cela éviterait également le texte en majuscules dans le fichier HTML, ce qui pourrait rendre le code difficile à lire.
+
+## Alignement du texte
+
+Peu importe la taille du style appliqué au texte (typeface, taille, poids, etc.), le texte apparaît toujours sur le côté gauche du navigateur.
+
+Pour déplacer ou aligner du texte, nous pouvons utiliser la propriété text-align.
+```
+h1 {
+  text-align: right;
+}
+```
+La propriété text-align peut être définie sur l'une des trois valeurs suivantes:
+
+1 left - aligne le texte sur le côté gauche du navigateur.
+2 center des centres centraux.
+3 right - aligne le texte sur le côté droit du navigateur.
+
+Plus tard dans le cours, vous apprendrez exactement comment le navigateur positionne les éléments HTML par défaut, ce qui vous aidera à comprendre comment le navigateur «aligne» le texte, car «aligner» est un terme relatif. Pour l'instant, il suffit de savoir que le texte peut être déplacé vers la gauche, le centre ou le côté droit de la page Web.
+
+## Revue: Polices  
+
+Bon travail! Vous avez appris à façonner un aspect important de l'expérience utilisateur: les polices!
+
+Examinons ce que vous avez appris jusqu'ici:
+
+1 La propriété font-family change la police de caractères du texte.
+2 Les polices Serif ont des détails supplémentaires sur les extrémités de chaque lettre. Les polices Sans-Serif ne le font pas.
+3 Les polices de recharge sont utilisées lorsqu'une certaine police n'est pas installée sur l'ordinateur d'un utilisateur.
+4 Google Fonts fournit des polices gratuites qui peuvent être utilisées dans un fichier HTML avec l'élément <link>.
+5 Le format de police peut être spécifié en utilisant des pixels, des ems ou des pourcentages.
+6 L'espacement vertical entre les lignes de texte peut être modifié avec la propriété line-spacing.
+7 L'espacement horizontal entre les mots peut être modifié avec la propriété word-spacing.
+8 L'espacement entre les lettres, le noyau, peut être modifié avec la propriété letter-spacing.
+9 Le texte peut apparaître en gras avec la propriété font-weight.
+10 Le texte peut apparaître en italique avec la propriété font-style.
+11 peuvent apparaître en toutes les majuscules ou en minuscules avec la propriété text-transform.
+12 Le texte peut être aligné avec la propriété text-align.
+Jusqu'à présent, vous avez appris à façonner la couleur et les polices. Notez cependant que tout le style que vous avez utilisé est toujours appliqué à tous les éléments d'un type sur une page Web. Par exemple, un sélecteur p dans la feuille de style cible tous les éléments <p> sur la page Web. Comment pouvons-nous être plus sélectifs sur les éléments que nous aimerions styler?
+
+Dans l'unité suivante, vous apprendrez comment organiser et étiqueter votre code HTML afin que vous puissiez être plus sélectif avec votre style CSS.
