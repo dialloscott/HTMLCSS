@@ -802,6 +802,7 @@ p {
 }
 ```
 
+<<<<<<< HEAD
 2. ems - prononcé juste comme  "em". Un em est égal à la largeur de la lettre "m". Les Ems sont une unité de mesure relative. Ils changent la taille du texte par rapport à la taille du texte de l'élément parent.
 
 ```
@@ -927,3 +928,4 @@ Examinons ce que vous avez appris jusqu'ici:
 Jusqu'à présent, vous avez appris à façonner la couleur et les polices. Notez cependant que tout le style que vous avez utilisé est toujours appliqué à tous les éléments d'un type sur une page Web. Par exemple, un sélecteur p dans la feuille de style cible tous les éléments <p> sur la page Web. Comment pouvons-nous être plus sélectifs sur les éléments que nous aimerions styler?
 
 Dans l'unité suivante, vous apprendrez comment organiser et étiqueter votre code HTML afin que vous puissiez être plus sélectif avec votre style CSS.
+2. ems - prononcé juste comme  "em". Un em est égal à la largeur de la lettre "m". Les Ems sont une unité de mesure relative. Ils changent la taille du texte par rapport à la taille du texte de l'élément parent.
