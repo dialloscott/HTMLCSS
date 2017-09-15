@@ -802,6 +802,7 @@ p {
 }
 ```
 
+<<<<<<< HEAD
 2. ems - prononcé juste comme  "em". Un em est égal à la largeur de la lettre "m". Les Ems sont une unité de mesure relative. Ils changent la taille du texte par rapport à la taille du texte de l'élément parent.
 
 ```
@@ -884,9 +885,9 @@ h1 {
 }
 ```
 
-Le code dans l'exemple ci-dessus définit tous les éléments <h1> pour apparaître en majuscule, quel que soit le cas utilisé pour l'en-tête dans le code HTML. Alternativement, la valeur en ```lowercase``` pourrait être utilisée pour formater du texte en minuscules.
+Le code dans l'exemple ci-dessus définit tous les éléments ```<h1>``` pour apparaître en majuscule, quel que soit le cas utilisé pour l'en-tête dans le code HTML. Alternativement, la valeur en lowercase pourrait être utilisée pour formater du texte en minuscules.
 Puisque le texte peut être saisi directement en majuscules ou minuscules dans un fichier HTML, quel est le point d'une règle CSS qui vous permet de formater une lettre?
-Selon le type de contenu affiché par une page Web, il est judicieux de toujours choisir un élément spécifique dans toutes les lettres majuscules ou minuscules. Par exemple, un site Web qui rapporte des dernières nouvelles peut décider de formater tous les éléments de titre <h1> tels qu'ils apparaissent toujours en toutes les majuscules, comme dans l'exemple ci-dessus. Cela éviterait également le texte en majuscules dans le fichier HTML, ce qui pourrait rendre le code difficile à lire.
+Selon le type de contenu affiché par une page Web, il est judicieux de toujours choisir un élément spécifique dans toutes les lettres majuscules ou minuscules. Par exemple, un site Web qui rapporte des dernières nouvelles peut décider de formater tous les éléments de titre ```<h1>``` tels qu'ils apparaissent toujours en toutes les majuscules, comme dans l'exemple ci-dessus. Cela éviterait également le texte en majuscules dans le fichier HTML, ce qui pourrait rendre le code difficile à lire.
 
 ## Alignement du texte
 
@@ -927,3 +928,4 @@ Examinons ce que vous avez appris jusqu'ici:
 Jusqu'à présent, vous avez appris à façonner la couleur et les polices. Notez cependant que tout le style que vous avez utilisé est toujours appliqué à tous les éléments d'un type sur une page Web. Par exemple, un sélecteur p dans la feuille de style cible tous les éléments <p> sur la page Web. Comment pouvons-nous être plus sélectifs sur les éléments que nous aimerions styler?
 
 Dans l'unité suivante, vous apprendrez comment organiser et étiqueter votre code HTML afin que vous puissiez être plus sélectif avec votre style CSS.
+2. ems - prononcé juste comme  "em". Un em est égal à la largeur de la lettre "m". Les Ems sont une unité de mesure relative. Ils changent la taille du texte par rapport à la taille du texte de l'élément parent.
