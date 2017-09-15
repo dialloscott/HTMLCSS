@@ -802,7 +802,6 @@ p {
 }
 ```
 
-<<<<<<< HEAD
 2. ems - prononcé juste comme  "em". Un em est égal à la largeur de la lettre "m". Les Ems sont une unité de mesure relative. Ils changent la taille du texte par rapport à la taille du texte de l'élément parent.
 
 ```
